@@ -40,7 +40,6 @@ header {
     text-decoration: none;
     color: #525252;
     font-weight: 600;
-    transition-delay: 1000;
 }
 
 nav li:active {
@@ -75,8 +74,10 @@ nav li {
     line-height: 20px;
     font-size: 0.92em;
     color: #009090;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
+
+
 
 /* -------------- Portfolio secrtion -------------- */
 
@@ -133,14 +134,18 @@ nav li {
 
 /* -------------- Footer -------------- */
 
-footer {
+#footer {
+    display: none;
+}
+
+#footer-mobile {
     border-top: 1px solid #e3e3e3;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
     padding-top: 20px
     
 }
 
-footer ul li {
+#footer-mobile ul li {
     font-size: 0.8em;
     font-weight: 800;
 }
@@ -152,7 +157,7 @@ footer ul li {
     list-style: none;
 }
 
-#footer-name {
+.footer-name {
     float: left;
 }
 
@@ -248,10 +253,52 @@ footer ul li {
         margin-top: -366px
     }
     
+    .contact-div {
+        border-bottom: 1px solid #c9c9c9;
+    }
+    
     #contact p,
     #contact li {
         font-size: 1em;
     }
+    
+    #footer-mobile {
+        display: none;
+    }
+    
+    #footer {
+        display: inline;
+    }
+    
+    .foot-link {
+        text-decoration: none;
+    }
+    
+    .footer-nav {
+        margin-right: -35%;
+    }
+    
+    .footer-nav li {
+        display: inline;
+        list-style: none;
+        text-align: center;
+        background: #fafafa;
+    
+    }
+    
+    .foot-link {
+        color: #525252;
+        font-weight: 600; 
+    }
+    
+    .footer-name {
+        list-style: none;
+        font-weight: 600;
+        margin-left: 5%;
+    }
+    
+    
+    
 
 }
 
@@ -345,6 +392,10 @@ footer ul li {
     #contact p,
     #contact li {
         font-size: 1em;
+    }
+    
+     .footer-nav {
+        margin-right: -41.5%;
     }
     
 
