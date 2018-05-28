@@ -36,6 +36,7 @@ header {
     padding-bottom: 5px;
 }
 
+
 .nav-link {
     text-decoration: none;
     color: #525252;
@@ -60,9 +61,12 @@ nav li {
 
 
 .header-image {
+    display: flex;
     max-width: 70%;
     margin-top: 15px;
-    margin-left: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
 }
 
 .header-text {
@@ -81,11 +85,17 @@ nav li {
 
 /* -------------- Portfolio secrtion -------------- */
 
+.portfolio-header {
+    padding-top: 20px;
+    background-color: #ffffff;
+}
+
 #portfolio {
     max-width: 100%;
     padding-top: 35px;
     background-color: #ffffff;
     padding-bottom: 40px;
+    margin-top: -35px
 }
 
 .portfolio-div img {
@@ -169,18 +179,9 @@ nav li {
 /* -------------- Media Queries -------------- */
 
 @media screen and (min-width: 768px) {
+    
     h1 {
         font-size: 1.7em;
-    }
-    
-    .nav-link:active {
-    color: rgb(0, 108, 255);
-    }
-
-    .nav-link:hover {
-        text-shadow: 1px 1px 1px #343434,
-                     1.5px 1.5px 1.5px #343434,
-                     2px 2px 2px #343434;       
     }
     
     header {
@@ -216,53 +217,17 @@ nav li {
         line-height: 25px;
     }
     
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     .portfolio-div {
-        width: 50%;
-    }
-    
-    .marketing-page,
-    .travel-app {
-        float: left;
-    }
-
-    .search-page,
-    .favorite-sports{
-        float: right;
-    }
-    
-    .portfolio-div img {
-        max-width: 97%;
-        margin-left: 1.5%;
-    }
-    
-    .contact-div {
-        display: table;
-        content: '';
-        clear: both;
-    }
-    
-    .clearfix {
-        display: table;
-        content: '';
-        clear: both;
+        flex: 1 50%;
     }
     
     
-    .calculator {
-        margin-left: 368px;
-        margin-top: -366px
-    }
-    
-    .contact-div {
-        border-bottom: 1px solid #c9c9c9;
-    }
-    
-    #contact p,
-    #contact li {
-        font-size: 1em;
-    }
-    
-    #footer-mobile {
+     #footer-mobile {
         display: none;
     }
     
@@ -275,13 +240,12 @@ nav li {
     }
     
     .footer-nav {
-        margin-right: -35%;
+        margin-right: -40%
     }
     
     .footer-nav li {
         display: inline;
         list-style: none;
-        text-align: center;
         background: #fafafa;
     
     }
@@ -294,8 +258,17 @@ nav li {
     .footer-name {
         list-style: none;
         font-weight: 600;
-        margin-left: 5%;
     }
+    
+    .footer-div {
+        max-width: 90%;
+        border-top: 1px solid #dddddd;
+        padding-top: 15px;
+        margin: auto;
+        
+    }
+    
+    
     
     
     
@@ -303,24 +276,8 @@ nav li {
 }
 
 @media screen and (min-width: 1024px) {
-     h1 {
-        font-size: 1.7em;
-    }
     
-    header {
-        max-width: 95%;
-        margin-left: 2.5%;
-        margin-top: 45px;
-        padding-bottom: 150px;
-    }
-    
-    header li {
-        float: right;
-        line-height: 35px; 
-        margin-right: 10px
-    }
-    
-    .nav-link:active {
+     .nav-link:active {
     color: rgb(0, 108, 255);
     }
 
@@ -330,77 +287,48 @@ nav li {
                      2px 2px 2px #343434;       
     }
     
-    header h1 {
-        float: left;
-        margin-top: 0;
-        margin-left: 10px;
+    header {
+        height: 45vh;
     }
-    
-    nav {
-        text-align: center;
-        margin-bottom: 55px;
-    }
-    
     
     .header-image {
-        float: right;
-        max-width: 37.5%;
-        margin-top: 100px;
-        margin-right: -290px;
+        margin-right: 5%;
+        margin-left: 5%;
     }
-    
-    .header-text {
-        max-width: 57.5%;
-        margin-left: 10px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 100px;
-        font-size: 1.2em;
-        line-height: 25px;
+     
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .portfolio-div {
-        width: 33%;
-        display: inline-block;
+        flex: 1 33.33%;
     }
     
-    .travel-app,
-    .calculator {
-        padding-left: 0.5%;
+    
+    
+    .contact-div {
+        max-width: 70%;
+        margin: auto;
+        border: none;
     }
     
-    .portfolio-div {
-        margin-bottom: 25px;
+    .contact-div h2 {
+        font-size: .8em;
     }
     
-    .portfolio-div p,
-    .portfolio-div h3{
-        margin-top: 17px;
+    .contact-div p,
+    .contact-div li{
+        font-size: .9em;
     }
     
-    .portfolio-div img {
-        max-width: 95%;
-        margin-left: 2.5%;
-    }
-
-    
-    .calculator {
-        margin-left: 0px;;
-        margin-top: 0px
+    .footer-nav {
+        margin-right: -52.5%
     }
     
-    #contact p,
-    #contact li {
-        font-size: 1em;
-    }
-    
-     .footer-nav {
-        margin-right: -41.5%;
-    }
-    
-
     
     
+        
 }
 
     
